@@ -54,18 +54,24 @@ def data_preprocessing(df: DataFrame) -> DataFrame:
     df = df.map(lambda x: x.strip())
 
     df.columns = df.columns.str.strip()
+    df.columns = df.columns.str.replace(r'\d+', '', regex=True)#удаление цифр
     df.columns = df.columns.str.replace(r'\.', '', regex=True)
     df.columns = df.columns.str.replace(r'\,', '', regex=True)
     df.columns = df.columns.str.replace(r'\:', '', regex=True)
     df.columns = df.columns.str.replace('/', '_', regex=True)
+    df.columns = df.columns.str.replace(r'(', '', regex=False)
+    df.columns = df.columns.str.replace(r')', '', regex=False)
+    df.columns = df.columns.str.strip()
+    # df = df.replace(r'\d+', '', regex=True)#удаление цифр
     df = df.replace('"', '', regex=True)
     df = df.replace('\\', '', regex=False)
     df = df.replace('\\"', '', regex=False)
-
     df = df.replace('+', '', regex=False)
     df.columns = df.columns.str.replace('+', '', regex=False)
 
     df = df.replace(r'[\r\n\t]+', ' ', regex=True)
+    df = df.replace(r'(', '', regex=False)
+    df = df.replace(r')', '', regex=False)
     df.columns = df.columns.str.replace(r'[\r\n\t]+', ' ', regex=True)
 
     # замена нескольких идущих подряд пробелов - одним

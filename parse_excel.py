@@ -8,6 +8,9 @@ parse_excel.exe 'путь_к_исходному_excel_файлу' 'опцион�
 
 Для преобразования в исполняемый файл:
 pyinstaller --onefile parse_excel.py
+
+Для вызова тестирования:
+./parse_excel.py 'https://docs.google.com/spreadsheets/d/1uFpI6armr0XDzcxZKYC5mBAzgFcWqJcxt2cxkwt4aJ8/edit?gid=355897038#gid=355897038'
 """
 
 # -*- coding: utf-8 -*-
@@ -21,7 +24,8 @@ import re
 
 from urllib.parse import urlparse, parse_qs
 from pathlib import Path
-from inner_parsers import parse_inner_excel_type_1, parse_inner_excel_type_2, parse_inner_excel_type_3, data_preprocessing
+from inner_parsers import parse_inner_excel_type_1, parse_inner_excel_type_2, parse_inner_excel_type_3, \
+    data_preprocessing
 
 INNER_PARSER_FUNCS = [parse_inner_excel_type_1, parse_inner_excel_type_2, parse_inner_excel_type_3]
 
@@ -219,8 +223,8 @@ def postprocessing_json(obj, work_name_to_code_dict):
         new_work_list = list()
         for work in data_from_links[link]:
             new_work = dict()
-            new_work["Номер"] = work.get("Номер","None")
-            new_work["Шифр_работы"] = work_name_to_code_dict.get(work.get("Наименование_работы","None"), "None")
+            new_work["Номер"] = work.get("Номер", "None")
+            new_work["Шифр_работы"] = work_name_to_code_dict.get(work.get("Наименование_работы", "None"), "None")
             # new_work["Шифр_работы"] = obj["Шифр_работы"]
             for key, item in work.items():
                 new_work[key] = work[key]
@@ -311,18 +315,19 @@ def test():
 
 
 if __name__ == '__main__':
+    main()
     # test()
-    df = pd.ExcelFile(SOURCE_FILE_PATH)
+    # df = pd.ExcelFile(SOURCE_FILE_PATH)
     # имена страниц внутри excel-файла
-    sheet_names = df.sheet_names
+    # sheet_names = df.sheet_names
     # рассматриваем таблицу только с 0-го листа
-    df = df.parse(sheet_names[0])
+    # df = df.parse(sheet_names[0])
     # предобработка датафрейма
-    df = data_preprocessing(df)
+    # df = data_preprocessing(df)
     # преобразуем каждую строчку датафрейма в словарь и добавляем её в список
-    list_of_dicts = df.to_dict(orient='records')
+    # list_of_dicts = df.to_dict(orient='records')
     # вызываем основную функцию
-    parse_source_excel(list_of_dicts)
-    print("Программа завершена.")
+    # parse_source_excel(list_of_dicts)
+    # print("Программа завершена.")
     # test()
     # main()
