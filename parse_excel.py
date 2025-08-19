@@ -32,11 +32,14 @@ INNER_PARSER_FUNCS = [parse_inner_excel_type_1, parse_inner_excel_type_2, parse_
 # ссылка на файл для скачивания
 LINK_SOURCE_FILE_PATH = r'https://docs.google.com/spreadsheets/d/1uFpI6armr0XDzcxZKYC5mBAzgFcWqJcxt2cxkwt4aJ8/edit?gid=355897038#gid=355897038'
 # путь к исходному excel файлу по умолчанию
-SOURCE_FILE_PATH = './data/Сводный перечень текущих работ для графиков.xlsx'
+# SOURCE_FILE_PATH = './data/Сводный перечень текущих работ для графиков.xlsx'
+SOURCE_FILE_PATH = Path(__file__).parent.joinpath('data').joinpath('Сводный перечень текущих работ для графиков.xlsx')
 # путь к директории для сохранения всех внутренних excel-файлов по умолчанию
-SAVED_ALL_EXCEL_DIRECTORY_PATH = './downloaded_all'
+# SAVED_ALL_EXCEL_DIRECTORY_PATH = './downloaded_all'
+SAVED_ALL_EXCEL_DIRECTORY_PATH = Path(__file__).parent.joinpath('downloaded_all')
 # путь к директории для сохранения результатов по умолчанию
-SAVED_RESULTS_PATH = './saved_jsons'
+# SAVED_RESULTS_PATH = './saved_jsons'
+SAVED_RESULTS_PATH = Path(__file__).parent.joinpath('saved_jsons')
 
 COLUMNS_TO_BE_MATCHED = ['Разработка_материалов_существующего_положения_эскизы',
                          'Рассмотрение_эскизов_выбор_рекомендуемого_варианта',
@@ -170,14 +173,14 @@ def parse_source_excel(list_of_dicts):
                         if link_for_download not in visited_links:
                             visited_links.append(link_for_download)
                             link_number = visited_links.index(link_for_download)
-                            local_filename = f'{SAVED_ALL_EXCEL_DIRECTORY_PATH}/{link_number}.xlsx'
+                            local_filename = f'{SAVED_ALL_EXCEL_DIRECTORY_PATH.joinpath(str(link_number))}.xlsx'
                             # local_filename = f'./downloaded_all/{link_number}.xlsx'
                             downloaded = download_file_stream(url=link_for_download, local_filename=local_filename)
                             if not downloaded:
                                 continue
                         else:
                             link_number = visited_links.index(link_for_download)
-                            local_filename = f'{SAVED_ALL_EXCEL_DIRECTORY_PATH}/{link_number}.xlsx'
+                            local_filename = f'{SAVED_ALL_EXCEL_DIRECTORY_PATH.joinpath(str(link_number))}.xlsx'
                             # local_filename = f'./downloaded_all/{link_number}.xlsx'
 
                         # пытаемя подобрать правильную функцию для парсинга файла
@@ -191,9 +194,10 @@ def parse_source_excel(list_of_dicts):
                                 obj_result_copy = postprocessing_json(obj_result_copy, work_name_to_code_dict)
                                 obj_result_copy['Вариант_парсера'] = str(parser_func_type + 1)
                                 obj_result = obj_result_copy
-                                with open(f'{SAVED_RESULTS_PATH}/{json_number}.json', 'w', encoding='utf-8') as f:
+                                with open(f'{SAVED_RESULTS_PATH.joinpath(str(json_number))}.json', 'w',
+                                          encoding='utf-8') as f:
                                     json.dump(obj_result, f, ensure_ascii=False, indent=4)
-                                print(f"Результат парсинга сохранён в {SAVED_RESULTS_PATH}/{json_number}")
+                                print(f"Результат парсинга сохранён в {SAVED_RESULTS_PATH.joinpath(str(json_number))}.json")
                                 break
                             except Exception as ex:
                                 # print(f"file_number = {link_number}, exception = {ex}, parser = {parser_func_type}")
@@ -271,19 +275,30 @@ def main():
 
     # current_dir = Path.cwd()
     current_dir = Path(__file__).parent
+    # использовать joinpath
+    # определяем является ли первый аргумент http ссылкой ил путём к существующему файлу
     if is_link(sys.argv[1]):
         link = sys.argv[1]
         SOURCE_FILE_PATH = current_dir.joinpath('source')
         SOURCE_FILE_PATH.mkdir(parents=True, exist_ok=True)
-        SOURCE_FILE_PATH = f"{SOURCE_FILE_PATH}/source_excel.xlsx"
+        SOURCE_FILE_PATH = SOURCE_FILE_PATH.joinpath("source_excel.xlsx")
         get_source_excel(link, SOURCE_FILE_PATH)
     else:
         SOURCE_FILE_PATH = sys.argv[1]
 
-    SAVED_RESULTS_PATH = current_dir.joinpath('saved_jsons')
+    if len(sys.argv) > 2:
+        SAVED_RESULTS_PATH = Path(sys.argv[2])
+    else:
+        SAVED_RESULTS_PATH = current_dir.joinpath('saved_jsons')
+
     SAVED_RESULTS_PATH.mkdir(parents=True, exist_ok=True)
 
-    SAVED_ALL_EXCEL_DIRECTORY_PATH = current_dir.joinpath('downloaded_all')
+    if len(sys.argv) > 3:
+        SAVED_ALL_EXCEL_DIRECTORY_PATH = Path(sys.argv[3])
+    else:
+        SAVED_ALL_EXCEL_DIRECTORY_PATH = current_dir.joinpath('downloaded_all')
+
+    # SAVED_ALL_EXCEL_DIRECTORY_PATH = SAVED_ALL_EXCEL_DIRECTORY_PATH.joinpath('downloaded_all')
     SAVED_ALL_EXCEL_DIRECTORY_PATH.mkdir(parents=True, exist_ok=True)
 
     df = pd.ExcelFile(SOURCE_FILE_PATH)

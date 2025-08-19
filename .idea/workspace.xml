@@ -7,50 +7,18 @@
     <list default="true" id="0ae840de-8104-4bf5-8f54-990d391292fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parse_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/parse_excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/100.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/101.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/102.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/103.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/104.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/105.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/174.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/175.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/179.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/180.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/181.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/182.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/183.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/184.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/185.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/194.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/195.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/199.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/24.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/25.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/26.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/27.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/28.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/29.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/30.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/31.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/32.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/33.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/34.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/35.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/89.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/90.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/91.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/92.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/93.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/94.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_jsons/95.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/source_excel.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,22 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.parse_excel.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Artem/Magistrature/1_sem/Architecture of devices and systems of computing equipment/architecture&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.parse_excel.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Artem/Magistrature/1_sem/Architecture of devices and systems of computing equipment/architecture",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Python.test">
     <configuration name="parse_excel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="excel_parser" />
       <option name="ENV_FILES" value="" />
@@ -115,8 +84,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="excel_parser" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.parse_excel" />
       </list>
     </recent_temporary>
@@ -140,7 +133,8 @@
       <workItem from="1754900443344" duration="9831000" />
       <workItem from="1754935402485" duration="142000" />
       <workItem from="1755244187874" duration="6122000" />
-      <workItem from="1755583845942" duration="901000" />
+      <workItem from="1755583845942" duration="2134000" />
+      <workItem from="1755591997961" duration="5201000" />
     </task>
     <servers />
   </component>
@@ -149,5 +143,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/excel_parser$parse_excel.coverage" NAME="parse_excel Coverage Results" MODIFIED="1754905757279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/excel_parser$test.coverage" NAME="test Coverage Results" MODIFIED="1755600455537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
