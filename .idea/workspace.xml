@@ -5,8 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ae840de-8104-4bf5-8f54-990d391292fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/inner_parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/inner_parsers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parse_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/parse_excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/100.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/101.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/102.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/103.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/104.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/105.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/174.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/175.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/179.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/180.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/181.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/182.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/183.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/184.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/185.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/194.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/195.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/199.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/29.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/30.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/31.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/32.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/33.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/34.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/35.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/89.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/90.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/91.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/92.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/93.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/94.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved_jsons/95.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/source_excel.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +139,8 @@
       <updated>1754900442299</updated>
       <workItem from="1754900443344" duration="9831000" />
       <workItem from="1754935402485" duration="142000" />
-      <workItem from="1755244187874" duration="1098000" />
+      <workItem from="1755244187874" duration="6122000" />
+      <workItem from="1755583845942" duration="901000" />
     </task>
     <servers />
   </component>

@@ -269,7 +269,8 @@ def main():
     global SAVED_RESULTS_PATH
     global SAVED_ALL_EXCEL_DIRECTORY_PATH
 
-    current_dir = Path.cwd()
+    # current_dir = Path.cwd()
+    current_dir = Path(__file__).parent
     if is_link(sys.argv[1]):
         link = sys.argv[1]
         SOURCE_FILE_PATH = current_dir.joinpath('source')
